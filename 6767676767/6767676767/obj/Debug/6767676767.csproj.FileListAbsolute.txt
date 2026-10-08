@@ -1,0 +1,10 @@
+C:\Users\m303\Desktop\115_1_C_Sharp\6767676767\6767676767\obj\Debug\6767676767.csproj.AssemblyReference.cache
+C:\Users\m303\Desktop\115_1_C_Sharp\6767676767\6767676767\obj\Debug\_6767676767.Form1.resources
+C:\Users\m303\Desktop\115_1_C_Sharp\6767676767\6767676767\obj\Debug\_6767676767.Properties.Resources.resources
+C:\Users\m303\Desktop\115_1_C_Sharp\6767676767\6767676767\obj\Debug\6767676767.csproj.GenerateResource.cache
+C:\Users\m303\Desktop\115_1_C_Sharp\6767676767\6767676767\obj\Debug\6767676767.csproj.CoreCompileInputs.cache
+C:\Users\m303\Desktop\115_1_C_Sharp\6767676767\6767676767\bin\Debug\6767676767.exe.config
+C:\Users\m303\Desktop\115_1_C_Sharp\6767676767\6767676767\bin\Debug\6767676767.exe
+C:\Users\m303\Desktop\115_1_C_Sharp\6767676767\6767676767\bin\Debug\6767676767.pdb
+C:\Users\m303\Desktop\115_1_C_Sharp\6767676767\6767676767\obj\Debug\6767676767.exe
+C:\Users\m303\Desktop\115_1_C_Sharp\6767676767\6767676767\obj\Debug\6767676767.pdb

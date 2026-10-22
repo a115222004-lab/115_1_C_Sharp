@@ -27,5 +27,23 @@ namespace Sale_Price_Calculator
             // Close the form.
             this.Close();
         }
+
+        private void originalPriceTextBox_TextChanged(object sender, EventArgs e)
+        {
+            decimal originalPrice;
+            decimal discountPercentage;
+            decimal salePrice;
+
+            originalPrice = decimal.Parse(originalPriceTextBox.Text);
+            discountPercentage = decimal.Parse(discountPercentageTextBox.Text);
+            salePrice = originalPrice * (1 -  discountPercentage / 100.0m);
+
+            salePriceLabel.Text = salePrice.ToString("c");
+        }
+
+        private void outputDescriptionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

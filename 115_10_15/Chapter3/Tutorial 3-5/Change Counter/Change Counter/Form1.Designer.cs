@@ -45,12 +45,12 @@
             // instructionLabel
             // 
             this.instructionLabel.AutoSize = true;
-            this.instructionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.instructionLabel.Location = new System.Drawing.Point(150, 9);
+            this.instructionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.instructionLabel.Location = new System.Drawing.Point(120, 9);
             this.instructionLabel.Name = "instructionLabel";
-            this.instructionLabel.Size = new System.Drawing.Size(110, 16);
+            this.instructionLabel.Size = new System.Drawing.Size(180, 29);
             this.instructionLabel.TabIndex = 0;
-            this.instructionLabel.Text = "Click the Coins";
+            this.instructionLabel.Text = "點擊硬幣";
             // 
             // fiveCentsPictureBox
             // 
@@ -98,38 +98,40 @@
             // 
             // exitButton
             // 
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.exitButton.Location = new System.Drawing.Point(180, 430);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.Size = new System.Drawing.Size(100, 45);
             this.exitButton.TabIndex = 5;
-            this.exitButton.Text = "Exit";
+            this.exitButton.Text = "退出";
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // totalLabel
             // 
             this.totalLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.totalLabel.Location = new System.Drawing.Point(291, 206);
+            this.totalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.totalLabel.Location = new System.Drawing.Point(291, 200);
             this.totalLabel.Name = "totalLabel";
-            this.totalLabel.Size = new System.Drawing.Size(100, 23);
+            this.totalLabel.Size = new System.Drawing.Size(120, 40);
             this.totalLabel.TabIndex = 6;
             this.totalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // outputDescription
             // 
             this.outputDescription.AutoSize = true;
-            this.outputDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputDescription.Location = new System.Drawing.Point(319, 179);
+            this.outputDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.outputDescription.Location = new System.Drawing.Point(299, 160);
             this.outputDescription.Name = "outputDescription";
-            this.outputDescription.Size = new System.Drawing.Size(44, 16);
+            this.outputDescription.Size = new System.Drawing.Size(80, 29);
             this.outputDescription.TabIndex = 7;
-            this.outputDescription.Text = "Total";
+            this.outputDescription.Text = "總額";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 465);
+            this.ClientSize = new System.Drawing.Size(430, 500);
             this.Controls.Add(this.outputDescription);
             this.Controls.Add(this.totalLabel);
             this.Controls.Add(this.exitButton);
@@ -139,7 +141,7 @@
             this.Controls.Add(this.fiveCentsPictureBox);
             this.Controls.Add(this.instructionLabel);
             this.Name = "Form1";
-            this.Text = "Change Counter";
+            this.Text = "零錢計算機";
             ((System.ComponentModel.ISupportInitialize)(this.fiveCentsPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tenCentsPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.twentyFiveCentsPictureBox)).EndInit();

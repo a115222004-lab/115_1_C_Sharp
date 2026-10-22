@@ -19,13 +19,25 @@ namespace Fuel_Economy
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            
+            // 儲存使用者輸入的行駛公里數、耗油公升數，以及計算後的每公升行駛公里數。
+            double km;
+            double liters;
+            double kmp;
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            // Close the form.
+            // 關閉目前的表單。
             this.Close();
+        }
+
+        private void milesTextBox_TextChanged(o        private void MilesTextBox_TextChanged(object sender, EventArgs e)
+xtBox.Text) * 1.60934; // Convert miles to kilometers
+            liters = double.Parse(litersTextBox.Text) * 3.78541; // Convert gallons to liters
+            kmpl = km / liters; // Calculate kilometers per liter
+ * 1.60934; // Convert miles to kilometers
+            liters = double.Parse(litersTextBox.Text) * 3.78541; // Convert gallons to liters
+            kmpl = km / liters; // Calculate kilometers per liter
         }
     }
 }

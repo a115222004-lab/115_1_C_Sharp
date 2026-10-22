@@ -14,23 +14,21 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
+// 將 ComVisible 設為 false，可讓此組件中的類型不顯示於 COM 元件。
+// 若需要從 COM 存取此組件中的類型，請將該屬性設為 true。
 [assembly: ComVisible(false)]
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
+// 如果此專案公開為 COM，以下 GUID 會作為類型程式庫的識別碼。
 [assembly: Guid("81e3dd9e-59e8-42e4-b098-c229fdffb68c")]
 
-// Version information for an assembly consists of the following four values:
+// 組件版本資訊由下列四個值組成：
 //
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
+//      主要版本
+//      次要版本
+//      建置編號
+//      修訂編號
 //
-// You can specify all the values or you can default the Build and Revision Numbers 
-// by using the '*' as shown below:
+// 可以指定所有值，也可以使用星號讓建置編號與修訂編號自動產生：
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

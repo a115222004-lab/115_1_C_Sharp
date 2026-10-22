@@ -19,7 +19,22 @@ namespace Test_Average
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                double test1, test2, test3, average;
+                // Get the test scores from the text boxes.
+                test1 = double.Parse(test1TextBox.Text);
+                test2 = double.Parse(test2TextBox.Text);
+                test3 = double.Parse(test3TextBox.Text);
+
+                average = (test1 + test2 + test3) / 3;
+                averageLabel.Text = average.ToString("F1");
+
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Please enter valid numeric values for all test scores.", "Input Error");
+            }
         }
 
         private void clearButton_Click(object sender, EventArgs e)
@@ -35,6 +50,11 @@ namespace Test_Average
         {
             // Close the form.
             this.Close();
+        }
+
+        private void test1TextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

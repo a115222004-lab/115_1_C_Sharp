@@ -12,8 +12,11 @@ namespace Change_Counter
 {
     public partial class Form1 : Form
     {
-        
-
+        const decimal FIVE_CENTS = 5.0m;
+        const decimal TEN_CENTS = 10.0m;
+        const decimal TWENTY_FIVE_CENTS = 25.0m;
+        const decimal FIFTY_CENTS = 50.0m;
+        private decimal total = 0.00m;
         public Form1()
         {
             InitializeComponent();
@@ -21,17 +24,23 @@ namespace Change_Counter
 
         private void fiveCentsPictureBox_Click(object sender, EventArgs e)
         {
-            
-        }
+           decimal total = 0.00m;
+            total += FIVE_CENTS;
+            totalLabel.Text = total.ToString("C");
 
+        }
+      
         private void tenCentsPictureBox_Click(object sender, EventArgs e)
         {
-           
+           decimal total = 0.00m;
+            total += TEN_CENTS;
+            totalLabel.Text = total.ToString("C");
         }
 
         private void twentyFiveCentsPictureBox_Click(object sender, EventArgs e)
         {
-           
+           total += TWENTY_FIVE_CENTS;
+            totalLabel.Text = total.ToString("C");  
         }
 
         private void fiftyCentsPictureBox_Click(object sender, EventArgs e)

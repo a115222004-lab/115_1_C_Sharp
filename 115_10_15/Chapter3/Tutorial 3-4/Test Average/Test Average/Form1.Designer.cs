@@ -43,105 +43,128 @@
             // 
             // test1TextBox
             // 
-            this.test1TextBox.Location = new System.Drawing.Point(102, 15);
+            this.test1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.test1TextBox.Location = new System.Drawing.Point(225, 28);
+            this.test1TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.test1TextBox.Name = "test1TextBox";
-            this.test1TextBox.Size = new System.Drawing.Size(100, 20);
+            this.test1TextBox.Size = new System.Drawing.Size(223, 48);
             this.test1TextBox.TabIndex = 0;
+            this.test1TextBox.TextChanged += new System.EventHandler(this.test1TextBox_TextChanged);
             // 
             // test2TextBox
             // 
-            this.test2TextBox.Location = new System.Drawing.Point(102, 41);
+            this.test2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.test2TextBox.Location = new System.Drawing.Point(225, 104);
+            this.test2TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.test2TextBox.Name = "test2TextBox";
-            this.test2TextBox.Size = new System.Drawing.Size(100, 20);
+            this.test2TextBox.Size = new System.Drawing.Size(223, 48);
             this.test2TextBox.TabIndex = 1;
             // 
             // test3TextBox
             // 
-            this.test3TextBox.Location = new System.Drawing.Point(102, 67);
+            this.test3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.test3TextBox.Location = new System.Drawing.Point(225, 180);
+            this.test3TextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.test3TextBox.Name = "test3TextBox";
-            this.test3TextBox.Size = new System.Drawing.Size(100, 20);
+            this.test3TextBox.Size = new System.Drawing.Size(223, 48);
             this.test3TextBox.TabIndex = 2;
             // 
             // test1PromptLabel
             // 
             this.test1PromptLabel.AutoSize = true;
-            this.test1PromptLabel.Location = new System.Drawing.Point(52, 18);
+            this.test1PromptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.test1PromptLabel.Location = new System.Drawing.Point(22, 39);
+            this.test1PromptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.test1PromptLabel.Name = "test1PromptLabel";
-            this.test1PromptLabel.Size = new System.Drawing.Size(40, 13);
+            this.test1PromptLabel.Size = new System.Drawing.Size(155, 40);
             this.test1PromptLabel.TabIndex = 3;
-            this.test1PromptLabel.Text = "Test 1:";
+            this.test1PromptLabel.Text = "測試 1：";
             // 
             // test2PromptLabel
             // 
             this.test2PromptLabel.AutoSize = true;
-            this.test2PromptLabel.Location = new System.Drawing.Point(52, 48);
+            this.test2PromptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.test2PromptLabel.Location = new System.Drawing.Point(22, 115);
+            this.test2PromptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.test2PromptLabel.Name = "test2PromptLabel";
-            this.test2PromptLabel.Size = new System.Drawing.Size(40, 13);
+            this.test2PromptLabel.Size = new System.Drawing.Size(155, 40);
             this.test2PromptLabel.TabIndex = 4;
-            this.test2PromptLabel.Text = "Test 2:";
+            this.test2PromptLabel.Text = "測試 2：";
             // 
             // test3PromptLabel
             // 
             this.test3PromptLabel.AutoSize = true;
-            this.test3PromptLabel.Location = new System.Drawing.Point(52, 74);
+            this.test3PromptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.test3PromptLabel.Location = new System.Drawing.Point(22, 191);
+            this.test3PromptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.test3PromptLabel.Name = "test3PromptLabel";
-            this.test3PromptLabel.Size = new System.Drawing.Size(40, 13);
+            this.test3PromptLabel.Size = new System.Drawing.Size(155, 40);
             this.test3PromptLabel.TabIndex = 5;
-            this.test3PromptLabel.Text = "Test 3:";
+            this.test3PromptLabel.Text = "測試 3：";
             // 
             // averageLabel
             // 
             this.averageLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.averageLabel.Location = new System.Drawing.Point(133, 100);
+            this.averageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.averageLabel.Location = new System.Drawing.Point(330, 267);
+            this.averageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.averageLabel.Name = "averageLabel";
-            this.averageLabel.Size = new System.Drawing.Size(100, 23);
+            this.averageLabel.Size = new System.Drawing.Size(224, 56);
             this.averageLabel.TabIndex = 6;
             this.averageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // outputDescriptionLabel
             // 
             this.outputDescriptionLabel.AutoSize = true;
-            this.outputDescriptionLabel.Location = new System.Drawing.Point(22, 105);
+            this.outputDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.outputDescriptionLabel.Location = new System.Drawing.Point(22, 278);
+            this.outputDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputDescriptionLabel.Name = "outputDescriptionLabel";
-            this.outputDescriptionLabel.Size = new System.Drawing.Size(105, 13);
+            this.outputDescriptionLabel.Size = new System.Drawing.Size(269, 40);
             this.outputDescriptionLabel.TabIndex = 7;
-            this.outputDescriptionLabel.Text = "Average Test Score:";
+            this.outputDescriptionLabel.Text = "平均測試分數：";
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(9, 143);
+            this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.calculateButton.Location = new System.Drawing.Point(22, 360);
+            this.calculateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(75, 36);
+            this.calculateButton.Size = new System.Drawing.Size(195, 69);
             this.calculateButton.TabIndex = 8;
-            this.calculateButton.Text = "Calculate Average";
+            this.calculateButton.Text = "計算平均";
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(90, 143);
+            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.clearButton.Location = new System.Drawing.Point(255, 360);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(75, 36);
+            this.clearButton.Size = new System.Drawing.Size(195, 69);
             this.clearButton.TabIndex = 9;
-            this.clearButton.Text = "Clear";
+            this.clearButton.Text = "清除";
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(171, 143);
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.exitButton.Location = new System.Drawing.Point(488, 360);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 36);
+            this.exitButton.Size = new System.Drawing.Size(195, 69);
             this.exitButton.TabIndex = 10;
-            this.exitButton.Text = "Exit";
+            this.exitButton.Text = "結束";
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(255, 195);
+            this.ClientSize = new System.Drawing.Size(705, 443);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.calculateButton);
@@ -153,8 +176,9 @@
             this.Controls.Add(this.test3TextBox);
             this.Controls.Add(this.test2TextBox);
             this.Controls.Add(this.test1TextBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
-            this.Text = "Test Average";
+            this.Text = "測試平均分數";
             this.ResumeLayout(false);
             this.PerformLayout();
 

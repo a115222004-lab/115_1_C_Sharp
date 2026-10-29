@@ -1,0 +1,77 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Payroll_with_Overtime
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            const decimal OVERTIME_RATE = 1.5m; // Overtime rate is 1.5 times the regular pay rate.
+            const decimal REGULAR_HOURS = 40m; // Regular hours before overtime.
+
+            try
+            {
+                decimal hoursWorked = Convert.ToDecimal(hoursWorkedTextBox.Text);
+                decimal hourlyPayRate = Convert.ToDecimal(hourlyPayRateTextBox.Text);
+                decimal grossPay;
+
+                if (hoursWorked < 0 || hourlyPayRate < 0)
+                {
+                    MessageBox.Show("工作時數與每小時薪資不可為負數。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (hoursWorked <= REGULAR_HOURS)
+                {
+                    grossPay = hoursWorked * hourlyPayRate;
+                }
+                else
+                {
+                    decimal overtimeHours = hoursWorked - REGULAR_HOURS;
+                    grossPay = (REGULAR_HOURS * hourlyPayRate) +
+                               (overtimeHours * hourlyPayRate * OVERTIME_RATE);
+                }
+
+                grossPayLabel.Text = grossPay.ToString("C2");
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("請輸入有效的數字。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (OverflowException)
+            {
+                MessageBox.Show("輸入的數值超出範圍。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            // Clear the TextBoxes and gross pay label.
+            hoursWorkedTextBox.Text = "";
+            hourlyPayRateTextBox.Text = "";
+            grossPayLabel.Text = "";
+
+            // Reset the focus.
+            hoursWorkedTextBox.Focus();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // Close the form.
+            this.Close();
+        }
+    }
+}
